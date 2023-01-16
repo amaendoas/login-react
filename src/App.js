@@ -11,8 +11,8 @@ function App() {
         <Title text="Login"/>
         <Input type="text" label="Usuário"/>
         <Input type="password" label="Senha"/>
-        <Button title="Login"/>
-        <Link title="Esqueceu sua senha?"/>
+        <Button title="Login" href="https://discord.com/channels/1014299053149929473/1062175752612745266"/>
+        <Link title="Esqueceu sua senha?" href="https://www.google.com.br/"/>
       </div>
     </div>
   )

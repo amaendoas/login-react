@@ -1,7 +1,7 @@
 import "./styles.css"
 
-export function Link({title}) {
+export function Link({title, href}) {
   return (
-    <a target="_blank" rel="noreferrer" href="https://www.google.com.br/">{title}</a>
+    <a target="_blank" rel="noreferrer" href={href}>{title}</a>
   )
 }
