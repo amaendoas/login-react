@@ -22,7 +22,7 @@ body, button, a {
 .login {
   background-color: #343B51;
   border-radius: 5px;
-  width: 50%;
+  width: 25rem;
   height: fit-content;
   display: flex;
   flex-direction: column;

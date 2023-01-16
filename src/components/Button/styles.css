@@ -2,7 +2,7 @@ button {
   background-color: #A23953;
   border: none;
   width: 100%;
-  padding: 0.5rem;
+  padding: 12px;
   border-radius: 5px;
   cursor: pointer;
 }
