@@ -1,9 +1,7 @@
 import "./styles.css"
 
-export function Button({title, href}) {
+export function Button({title, onClick}) {
   return (
-    <a href={href} target="_blank" rel="noreferrer">
-      <button>{title}</button>
-    </a>
+      <button onClick={onClick}>{title}</button>
   )
 }

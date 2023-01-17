@@ -1,0 +1,22 @@
+
+body {
+  background-color: #454D6A;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login {
+  background-color: #343B51;
+  border-radius: 5px;
+  width: 25rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
