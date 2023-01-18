@@ -1,6 +1,6 @@
 import "./styles.css"
 
-export function Button({title, onClick}) {
+export const Button = ({title, onClick}) => {
   return (
       <button onClick={onClick}>{title}</button>
   )

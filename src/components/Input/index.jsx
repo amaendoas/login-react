@@ -1,6 +1,6 @@
 import "./styles.css"
 
-export function Input({type, label}) {
+export const Input = ({type, label}) => {
   return (
     <div className="input-container">
       <label>{label}</label>

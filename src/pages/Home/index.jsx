@@ -3,13 +3,12 @@ import { Link } from "../../components/Link"
 import { Title } from "../../components/Title"
 import "./styles.css"
 
-export function Home() {
+export const Home = () => {
   const navigate = useNavigate();
   return (
     <div className="home">
-      <Title text="Welcome to home"/>
-      <Link title="< Voltar para o Login" onClick={() => navigate("/")}/>
+      <Title text="Bem-vindo(a) a Home"/>
+      <Link title="< Voltar" onClick={() => navigate("/")}/>
     </div>
-
   )
 }
