@@ -10,7 +10,7 @@ export const Login = () => {
 
   return (
     <div className="container">
-      <div className="login">
+      <div className="container-wrapper">
         <Title text="Login"/>
         <Input type="text" label="Usuário"/>
         <Input type="password" label="Senha"/>

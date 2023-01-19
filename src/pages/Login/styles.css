@@ -10,7 +10,7 @@ body {
   height: 100vh;
 }
 
-.login {
+.container-wrapper {
   background-color: #343B51;
   border-radius: 5px;
   width: 25rem;

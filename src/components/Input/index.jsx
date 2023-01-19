@@ -1,4 +1,5 @@
 import "./styles.css"
+import PropTypes from 'prop-types'
 
 export const Input = ({type, label}) => {
   return (
@@ -8,3 +9,10 @@ export const Input = ({type, label}) => {
     </div>
   )
 }
+
+Input.propTypes = {
+  label: PropTypes.string
+}
+
+
+
