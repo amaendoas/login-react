@@ -1,0 +1,8 @@
+label.subtitle {
+  margin: 0;
+  font-weight: 600;
+}
+
+.subtitle span {
+  text-decoration: underline;
+}

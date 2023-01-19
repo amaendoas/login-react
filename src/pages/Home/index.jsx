@@ -5,14 +5,18 @@ import "./styles.css"
 
 export const Home = () => {
   const navigate = useNavigate();
+
+  const goToLogin = () => {
+    navigate("/")
+  }
+  
   return (
     <div className="container">
       <div className="container-wrapper">
         <Title text="Bem-vindo(a) a Home"/>
         <Button
           title="< Voltar"
-          onClick={() => navigate("/")}
-          bgColor="#454D6A"
+          onClick={goToLogin}
         />
       </div>
     </div>
