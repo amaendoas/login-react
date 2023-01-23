@@ -23,12 +23,16 @@ export const Login = () => {
     },
   ]);
 
+const [alertMsg, setAlertMsg] = useState('');
+const [inputColor, setInputColor] = useState("#d5d4d4")
+
   const goToHome = () => {
     const validUser = users.find(user => user.username === username && user.password === password);
     if(validUser) {
       navigate("/home")
     } else {
-      alert('Credenciais incorretas')
+      setAlertMsg('Credenciais incorretas')
+      setInputColor('#ca3057')
     }
   }
 
@@ -48,9 +52,9 @@ export const Login = () => {
     <div className="container">
       <div className="container-wrapper">
         <Title text={title}/>
-        {username && <Subtitle text={username}/>}
-        <Input type="text" label="Usuário" onChange={handleInputChange}/>
-        <Input type="password" label="Senha" onChange={handlePasswordChange}/>
+        {alertMsg && <Subtitle text={alertMsg}/>}
+        <Input type="text" label="Usuário" onChange={handleInputChange} color={inputColor}/>
+        <Input type="password" label="Senha" onChange={handlePasswordChange} color={inputColor}/>
         <Button title="Entrar" onClick={goToHome}/>
         <Button title="Alterar título" onClick={changeTitle} bgColor="#454D6A"/>
         <Link title="Esqueceu sua senha?" href="https://www.google.com.br/"/>

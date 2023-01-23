@@ -1,6 +1,12 @@
 label.subtitle {
   margin: 0;
+  padding: 5px;
   font-weight: 600;
+  color: #ca3057;
+  border: 1px solid #ca3057;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
 }
 
 .subtitle span {
