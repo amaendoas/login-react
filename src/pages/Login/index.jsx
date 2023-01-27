@@ -14,13 +14,21 @@ export const Login = () => {
   const [password, setPassword] = useState('');
   const [users, setUsers] = useState([
     {
+      id: 1,
       username: "joao",
       password: "oidevs",
     },
     {
+      id: 2,
       username: "jady",
       password: "oidevs",
     },
+    {
+      id: 3,
+      username: "amanda",
+      password: "oidevs",
+    },
+
   ]);
 
 const [alertMsg, setAlertMsg] = useState('');
@@ -29,7 +37,8 @@ const [inputColor, setInputColor] = useState("#d5d4d4")
   const goToHome = () => {
     const validUser = users.find(user => user.username === username && user.password === password);
     if(validUser) {
-      navigate("/home")
+      navigate("/home", { state: { users: users } })
+      
     } else {
       setAlertMsg('Credenciais incorretas')
       setInputColor('#ca3057')
