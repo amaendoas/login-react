@@ -15,7 +15,7 @@ export const Login = () => {
   const [users, setUsers] = useState([
     {
       id: 1,
-      username: "joao",
+      username: "amanda",
       password: "oidevs",
     },
     {
@@ -25,10 +25,29 @@ export const Login = () => {
     },
     {
       id: 3,
-      username: "amanda",
+      username: "ivina",
       password: "oidevs",
     },
-
+    {
+      id: 4,
+      username: "raniel",
+      password: "oidevs",
+    },
+    {
+      id: 5,
+      username: "miqueias",
+      password: "oidevs",
+    },
+    {
+      id: 6,
+      username: "natasha",
+      password: "oidevs",
+    },
+    {
+      id: 7,
+      username: "vitória",
+      password: "oidevs",
+    }
   ]);
 
 const [alertMsg, setAlertMsg] = useState('');

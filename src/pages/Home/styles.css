@@ -1,3 +1,14 @@
 ul {
   padding: 0 2rem;
 }
+
+.msg, .finish-msg {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+.msg span {
+  color: #A23953;
+  font-weight: 600;
+}
